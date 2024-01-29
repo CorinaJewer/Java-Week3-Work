@@ -41,6 +41,26 @@ public class MyCircle {
         this.center.setY(y);
     }
 
+    //int x = this.center.getX();: You're retrieving the X coordinate of a center. The this.center refers to an object that has a method called getX().
+
+    //int y = this.center.getY();: Similarly, you're retrieving the Y coordinate of the same center. The this.center has a method called getY().
+
+    //int[] xy = {x, y};: You're creating an integer array xy that contains the X and Y coordinates obtained in the previous steps.
+
+    //return xy;: Finally, you're returning the array xy, which holds the X and Y coordinates of the center.
+
+
+    public int []getCenterXY(){
+        int x = this.center.getX();
+        int y = this.center.getY();
+        int [] xy = {x, y};
+        return xy; 
+    }
+
+    public void setCenteXY(int x, int y){
+        this.center.setXY(x, y);
+    }
+
     public String toString() {
         return String.format("MyCircle[radius=%d,center=%s]", this.radius, this.center);
     }
